@@ -1,0 +1,16 @@
+<h3>Existing Tasks</h3>
+
+<table *ngIf="tasks.length > 0">
+    <tbody>
+        <tr *ngFor="let task of tasks" [class.completed]="task.complete">
+            <td>
+                <strong>{{task.name}}</strong>&nbsp;
+                <span class="text-light">{{task.date}}</span>
+            </td>
+            <td>
+                <strong>{{task.assigned}}</strong>&nbsp;
+                <span class="text-red" (click)="deleteTaskById(task.id)">X</span>
+            </td>
+        </tr>
+    </tbody>
+</table>

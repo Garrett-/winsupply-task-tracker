@@ -1,0 +1,12 @@
+<div class="container">
+  <app-header></app-header>
+
+  <div class="content-grid">
+    <div>
+      <app-create-task [taskDataService]="this.taskDataService"></app-create-task>
+    </div>
+    <div>
+      <app-list-tasks [taskDataService]="this.taskDataService"></app-list-tasks>
+    </div>
+  </div>
+</div>

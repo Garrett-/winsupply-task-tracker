@@ -1,0 +1,12 @@
+<h3>Create a Task</h3>
+
+<label for="task-name">Task Name</label>
+<input type="text" name="task-name" id="task-name" class="task-input" autofocus="" [class.error]="errors.name" [(ngModel)]="newTask.name">
+
+<label for="task-date">Date</label>
+<input type="date" name="task-date" id="task-date" class="task-input" [class.error]="errors.date" [(ngModel)]="newTask.date">
+
+<label for="task-assigned">Assigned To</label>
+<input type="text" name="task-assigned" id="task-assigned" class="task-input" [class.error]="errors.assigned" [(ngModel)]="newTask.assigned">
+
+<button type="button" id="task-submit" name="task-submit" (click)="addTask()">Submit</button>

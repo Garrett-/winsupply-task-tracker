@@ -1,0 +1,23 @@
+.container
+    background #eee
+    width 50%
+    margin 0 auto
+    margin-top 1%
+    padding-bottom 5rem
+
+.content-grid
+    display grid
+    grid-gap 0.5rem
+    grid-template-columns 1fr 1fr
+    grid-template-rows auto
+    margin 0 10px
+    min-height 200px
+
+    & > div
+        background #fff
+        padding 2rem
+        margin 0
+
+@media screen and (max-width: 1200px)
+    .content-grid
+        grid-template-columns auto
